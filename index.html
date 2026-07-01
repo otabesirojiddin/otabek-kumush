@@ -184,10 +184,8 @@ body.locked{overflow:hidden;height:100svh}
 .cov-sub{font-family:'Ital',serif;font-style:italic;font-size:13px;color:var(--soft);margin-top:-12px}
 @keyframes cpulse{0%,100%{opacity:.45}50%{opacity:1}}
 
-body>section:not(#hero),body>footer{position:relative;z-index:1}
-body>section:not(#hero){background:var(--bg)}
-#hero{height:100svh;min-height:100svh;padding:0;display:block;position:relative;z-index:1;background:transparent}
-.hero-vid{position:fixed;inset:0;width:100vw;height:100vh;height:100lvh;object-fit:cover;object-position:center bottom;z-index:0}
+#hero{height:100svh;min-height:100svh;padding:0;display:block;position:relative;overflow:hidden;background:#efe6d4}
+.hero-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;transform:none;will-change:auto}
 .hero-veil{position:absolute;inset:0;z-index:1;pointer-events:none;
   background:linear-gradient(180deg,rgba(247,243,236,.10),rgba(247,243,236,0) 26%,rgba(247,243,236,0) 60%,rgba(247,243,236,.30) 100%)}
 .hero-inner{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8vh 24px 20vh}
@@ -240,13 +238,6 @@ body>section:not(#hero){background:var(--bg)}
 </head>
 <body class="locked">
 
-<!-- ARKA/OQQUSH VIDEO — fixed fon (scroll'da qimirlamaydi) -->
-  <video class="hero-vid" autoplay muted loop playsinline preload="auto">
-    <source src="assets/img/swans.mov" type="video/quicktime">
-    <source src="assets/img/swans.mov" type="video/mp4">
-  </video>
-
-
 <!-- ================= COVER (konvert — bosib ochiladi) ================= -->
 <div id="cover">
   <div class="cov-in">
@@ -259,6 +250,10 @@ body>section:not(#hero){background:var(--bg)}
 
 <!-- ================= HERO (arka + oqqush video) ================= -->
 <section id="hero">
+  <video class="hero-vid" autoplay muted loop playsinline preload="auto">
+    <source src="assets/img/swans.mov" type="video/quicktime">
+    <source src="assets/img/swans.mov" type="video/mp4">
+  </video>
   <div class="hero-veil"></div>
   <div class="hero-inner">
     <div class="he-top">Taklifnoma</div>
