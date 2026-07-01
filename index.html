@@ -238,14 +238,14 @@ body.locked{overflow:hidden;height:100svh}
 .parchment{position:relative;max-width:620px;margin:0 auto;padding:clamp(68px,13vw,104px) clamp(46px,9vw,80px)}
 .parchment::before{content:"";position:absolute;inset:0;z-index:0;background:url('assets/img/paper.png') center/100% 100% no-repeat;filter:drop-shadow(0 22px 42px rgba(120,90,40,.28))}
 .flora{position:absolute;pointer-events:none;z-index:3;width:clamp(94px,23%,132px);height:auto;user-select:none}
-.fl-tr{bottom:-18px;right:-14px;transform:rotate(180deg)}
-.fl-bl{top:-18px;left:-14px;transform:none}
+.fl-tr{top:-18px;right:-14px;transform:scaleX(-1)}
+.fl-bl{bottom:-18px;left:-14px;transform:scaleY(-1)}
 .det{position:relative;z-index:1;padding:20px 4px}
 .det + .det{margin-top:42px}
 .det-h{font-family:'Script',cursive;font-weight:400;font-size:clamp(24px,5.7vw,37px);line-height:1.08;
   background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding:0 .1em .12em}
 .det-p{font-family:'Serif',Georgia,serif;font-size:clamp(15px,2.6vw,17px);color:#6c5a48;line-height:1.9;max-width:25ch;margin:15px auto 0}
-@media(max-width:520px){.flora{width:36%}.fl-tr{bottom:-12px;right:-8px}.fl-bl{top:-14px;left:-8px}}
+@media(max-width:520px){.flora{width:36%}.fl-tr{top:-12px;right:-8px}.fl-bl{bottom:-14px;left:-8px}}
 
 
 
