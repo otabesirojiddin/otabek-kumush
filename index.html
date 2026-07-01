@@ -235,15 +235,14 @@ body.locked{overflow:hidden;height:100svh}
 .copy-btn:hover{background:#fff;transform:translateY(-1px)}
 .copy-btn svg{color:var(--gold)}
 /* ===== BEZAKLI PARCHMENT (Kiyinish/Sovg'a) ===== */
-.parchment{position:relative;max-width:640px;margin:0 auto;padding:clamp(70px,13vw,110px) clamp(42px,8vw,82px);
-  background:url('assets/img/paper.png') center/100% 100% no-repeat;
-  filter:drop-shadow(0 26px 46px rgba(120,90,40,.30))}
-.flora{position:absolute;pointer-events:none;z-index:3;width:clamp(102px,27%,185px);height:auto;user-select:none}
-.fl-tr{top:-30px;right:-18px}
-.fl-bl{bottom:-22px;left:-14px;transform:scaleX(-1)}
+.parchment{position:relative;max-width:640px;margin:0 auto;padding:clamp(70px,13vw,110px) clamp(42px,8vw,82px)}
+.parchment::before{content:"";position:absolute;inset:0;z-index:0;background:url('assets/img/paper.png') center/100% 100% no-repeat;filter:drop-shadow(0 22px 42px rgba(120,90,40,.28))}
+.flora{position:absolute;pointer-events:none;z-index:3;width:clamp(120px,32%,215px);height:auto;user-select:none}
+.fl-tr{top:-32px;right:-24px}
+.fl-bl{bottom:-24px;left:-20px;transform:scaleX(-1)}
 .det{position:relative;z-index:1;padding:20px 4px}
 .det + .det{margin-top:42px}
-.det-h{font-family:'Script',cursive;font-weight:400;font-size:clamp(27px,6.6vw,42px);line-height:1.08;
+.det-h{font-family:'Script',cursive;font-weight:400;font-size:clamp(24px,5.7vw,37px);line-height:1.08;
   background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding:0 .1em .12em}
 .det-p{font-family:'Serif',Georgia,serif;font-size:clamp(15px,2.6vw,17px);color:#6c5a48;line-height:1.9;max-width:25ch;margin:15px auto 0}
 @media(max-width:520px){.flora{width:36%}.fl-tr{top:-12px;right:-8px}.fl-bl{bottom:-14px;left:-8px}}
