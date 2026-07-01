@@ -208,6 +208,47 @@ body.locked{overflow:hidden;height:100svh}
 .q-mark{font-family:'Serif',Georgia,serif;font-size:64px;line-height:.5;color:var(--gold-lt);opacity:.55;margin-bottom:10px}
 .q-text{font-family:'Ital',serif;font-style:italic;font-size:clamp(22px,4.6vw,31px);line-height:1.5;color:var(--gold)}
 .fmsg{max-width:36ch;margin:0 auto 8px;font-size:15px;color:#d9c8a6;line-height:1.7}
+/* ===== TO'YONA KARTA ===== */
+.gift{position:relative;max-width:470px;margin:46px auto 0}
+.card-bank{position:relative;aspect-ratio:1.6/1;border-radius:20px;padding:clamp(22px,5.5vw,32px);text-align:left;overflow:hidden;color:#eef0e2;
+  background:linear-gradient(145deg,#356048 0%,#1f3f2e 55%,#16301f 100%);
+  box-shadow:0 34px 64px -26px rgba(18,45,28,.7),inset 0 1px 0 rgba(255,255,255,.08)}
+.card-bank::before{content:"";position:absolute;inset:0;opacity:.55;pointer-events:none;
+  background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 1px,transparent 1px 22px)}
+.card-bank>*{position:relative}
+.cb-top{display:flex;justify-content:space-between;align-items:flex-start}
+.cb-bank{font-family:'Mono',serif;letter-spacing:.22em;font-size:clamp(13px,3.2vw,16px);color:#e7ecd9;padding-top:6px}
+.cb-chip{width:clamp(44px,11vw,54px);height:clamp(34px,8.5vw,42px);border-radius:7px;flex:none;position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#f0d9a8,#c9a96a 55%,#a8823c)}
+.cb-chip::before{content:"";position:absolute;inset:0;
+  background:linear-gradient(#0000001f,#0000001f) center/100% 1px no-repeat,linear-gradient(#0000001f,#0000001f) center/1px 100% no-repeat}
+.cb-num{font-family:'Serif',Georgia,serif;font-size:clamp(21px,6.4vw,34px);letter-spacing:.05em;color:#f2ecd7;margin:clamp(24px,7vw,44px) 0;white-space:nowrap}
+.cb-label{font-family:'Mono',serif;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(238,240,226,.55)}
+.cb-holder{font-family:'Mono',serif;font-size:clamp(15px,4.2vw,19px);letter-spacing:.08em;color:#eef0e2;margin-top:5px}
+.orn{position:absolute;width:30px;height:30px;z-index:3}
+.orn::before,.orn::after{content:"";position:absolute;inset:0;border-radius:5px;background:linear-gradient(135deg,#efd9a8,#b48c3d)}
+.orn::after{transform:rotate(45deg)}
+.orn.o-tl{top:-12px;left:-12px}.orn.o-tr{top:-12px;right:-12px}.orn.o-bl{bottom:-12px;left:-12px}.orn.o-br{bottom:-12px;right:-12px}
+.copy-btn{display:inline-flex;align-items:center;gap:11px;margin:30px auto 0;cursor:pointer;
+  font-family:var(--sans);font-weight:600;font-size:15px;color:#1f3f2e;
+  background:var(--card);border:1px solid var(--gold-lt);border-radius:40px;padding:15px 30px;box-shadow:var(--shadow);transition:.25s}
+.copy-btn:hover{background:#fff;transform:translateY(-1px)}
+.copy-btn svg{color:var(--gold)}
+/* ===== BEZAKLI PARCHMENT (Kiyinish/Sovg'a) ===== */
+.parchment{position:relative;max-width:640px;margin:0 auto;padding:clamp(70px,13vw,110px) clamp(42px,8vw,82px);
+  background:url('assets/img/paper.png') center/100% 100% no-repeat;
+  filter:drop-shadow(0 26px 46px rgba(120,90,40,.30))}
+.flora{position:absolute;pointer-events:none;z-index:3;width:clamp(102px,27%,185px);height:auto;user-select:none}
+.fl-tr{top:-20px;right:-14px}
+.fl-bl{bottom:-22px;left:-14px;transform:scaleX(-1)}
+.det{position:relative;z-index:1;padding:20px 4px}
+.det + .det{margin-top:42px}
+.det-h{font-family:'Script',cursive;font-weight:400;font-size:clamp(32px,7.6vw,48px);line-height:1;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding:0 .1em .12em}
+.det-p{font-family:'Serif',Georgia,serif;font-size:clamp(15px,2.6vw,17px);color:#6c5a48;line-height:1.9;max-width:25ch;margin:15px auto 0}
+@media(max-width:520px){.flora{width:36%}.fl-tr{top:-12px;right:-8px}.fl-bl{bottom:-14px;left:-8px}}
+
+
 
 /* ===== CALENDAR ===== */
 .cal{position:relative;max-width:530px;margin:46px auto 0;background:var(--card);
@@ -359,6 +400,24 @@ body.locked{overflow:hidden;height:100svh}
   </div>
 </section>
 
+<!-- ================= KIYINISH + SOVG'A (bezakli parchment) ================= -->
+<section id="details" class="center" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="parchment rev">
+      <img class="flora fl-tr" src="assets/img/flora-1.png" alt="">
+      <img class="flora fl-bl" src="assets/img/flora-2.png" alt="">
+      <div class="det">
+        <h3 class="det-h">Kiyinish uslubi</h3>
+        <p class="det-p">Tantanaga mos, nafis va bayramona liboslarda tashrif buyurishingizni so'raymiz.</p>
+      </div>
+      <div class="det">
+        <h3 class="det-h">Sovg'a haqida</h3>
+        <p class="det-p">Eng qimmatli sovg'a — bu sizning ishtirokingiz va samimiy tilaklaringiz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= OTA-ONALAR NOMIDAN ================= -->
 <section id="parents" class="center" style="background:var(--bg2)">
   <div class="wrap">
@@ -405,6 +464,30 @@ body.locked{overflow:hidden;height:100svh}
         <p class="gold" style="font-family:'Ital',serif;font-style:italic;font-size:22px;margin-top:6px">Rahmat! Javobingiz qabul qilindi.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ================= TO'YONA (bank kartasi) ================= -->
+<section id="giftcard" class="center">
+  <div class="wrap">
+    <div class="eyebrow rev">To'yona</div>
+    <h2 class="h rev">Qalbdan <span class="gold">to'yona</span></h2>
+    <p class="lead rev">Qalban to'yona atamoqchi bo'lsangiz, quyidagi karta raqamidan foydalanishingiz mumkin.</p>
+    <div class="gift rev">
+      <span class="orn o-tl"></span><span class="orn o-tr"></span><span class="orn o-bl"></span><span class="orn o-br"></span>
+      <div class="card-bank">
+        <div class="cb-top"><span class="cb-bank">DEMO BANK</span><span class="cb-chip"></span></div>
+        <div class="cb-num" id="cardNum">8600 1234 5678 9012</div>
+        <div class="cb-foot">
+          <div class="cb-label">Karta egasi</div>
+          <div class="cb-holder">OTABEK SIROJIDDIN</div>
+        </div>
+      </div>
+    </div>
+    <button class="copy-btn rev" id="copyCard" type="button">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+      <span class="ct">Raqamni nusxalash</span>
+    </button>
   </div>
 </section>
 
@@ -482,6 +565,17 @@ sky(document.getElementById('sky2'),12);
     for(let i=0;i<start;i++){const c=document.createElement('div');c.className='cal-cell empty';g.appendChild(c);}
     for(let n=1;n<=dim;n++){const c=document.createElement('div');c.className='cal-cell'+(n===day?' is-event':'');c.textContent=n;g.appendChild(c);}
   }
+})();
+
+/* ---- TO'YONA: raqamni nusxalash ---- */
+(function(){
+  var b=document.getElementById('copyCard'); if(!b) return;
+  b.addEventListener('click',function(){
+    var num=(document.getElementById('cardNum').textContent||'').replace(/\D/g,'');
+    var t=b.querySelector('.ct'); var done=function(){var o=t.textContent;t.textContent='Nusxalandi ✓';setTimeout(function(){t.textContent=o;},1800);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(num).then(done).catch(done);}
+    else{var ta=document.createElement('textarea');ta.value=num;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}ta.remove();done();}
+  });
 })();
 </script>
 </body>
