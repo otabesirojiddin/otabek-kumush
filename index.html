@@ -239,11 +239,11 @@ body.locked{overflow:hidden;height:100svh}
   background:url('assets/img/paper.png') center/100% 100% no-repeat;
   filter:drop-shadow(0 26px 46px rgba(120,90,40,.30))}
 .flora{position:absolute;pointer-events:none;z-index:3;width:clamp(102px,27%,185px);height:auto;user-select:none}
-.fl-tr{top:-20px;right:-14px}
+.fl-tr{top:-30px;right:-18px}
 .fl-bl{bottom:-22px;left:-14px;transform:scaleX(-1)}
 .det{position:relative;z-index:1;padding:20px 4px}
 .det + .det{margin-top:42px}
-.det-h{font-family:'Script',cursive;font-weight:400;font-size:clamp(32px,7.6vw,48px);line-height:1;
+.det-h{font-family:'Script',cursive;font-weight:400;font-size:clamp(27px,6.6vw,42px);line-height:1.08;
   background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding:0 .1em .12em}
 .det-p{font-family:'Serif',Georgia,serif;font-size:clamp(15px,2.6vw,17px);color:#6c5a48;line-height:1.9;max-width:25ch;margin:15px auto 0}
 @media(max-width:520px){.flora{width:36%}.fl-tr{top:-12px;right:-8px}.fl-bl{bottom:-14px;left:-8px}}
@@ -309,9 +309,14 @@ body.locked{overflow:hidden;height:100svh}
 <!-- ================= WELCOME (Kirish so'zi) ================= -->
 <section id="welcome" class="center">
   <div class="wrap">
-    <div class="eyebrow rev">Kirish so'zi</div>
-    <h2 class="h rev">Assalomu alaykum, <span class="gold">aziz mehmon!</span></h2>
-    <p class="lead rev">Ikki qalb bir bo'lgan, muhabbat rishtasi bilan bog'langan shu muborak kunni Siz bilan birga nishonlashni orzu qilamiz.</p>
+    <div class="parchment rev">
+      <img class="flora fl-tr" src="assets/img/flora-1.png" alt="">
+      <img class="flora fl-bl" src="assets/img/flora-2.png" alt="">
+      <div class="det">
+        <h3 class="det-h">Assalomu alaykum!</h3>
+        <p class="det-p">Aziz mehmon! Ikki qalb bir bo'lgan, muhabbat rishtasi bilan bog'langan shu muborak kunni Siz bilan birga nishonlashni orzu qilamiz.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -396,24 +401,6 @@ body.locked{overflow:hidden;height:100svh}
       <div class="ev"><div class="t">19:00</div><div class="d"></div><div class="nm">Ziyofat boshlanishi</div></div>
       <div class="ev"><div class="t">21:00</div><div class="d"></div><div class="nm">To'y tortini kesish</div></div>
       <div class="ev"><div class="t">21:30</div><div class="d"></div><div class="nm">Raqs va musiqa</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= KIYINISH + SOVG'A (bezakli parchment) ================= -->
-<section id="details" class="center" style="background:var(--bg2)">
-  <div class="wrap">
-    <div class="parchment rev">
-      <img class="flora fl-tr" src="assets/img/flora-1.png" alt="">
-      <img class="flora fl-bl" src="assets/img/flora-2.png" alt="">
-      <div class="det">
-        <h3 class="det-h">Kiyinish uslubi</h3>
-        <p class="det-p">Tantanaga mos, nafis va bayramona liboslarda tashrif buyurishingizni so'raymiz.</p>
-      </div>
-      <div class="det">
-        <h3 class="det-h">Sovg'a haqida</h3>
-        <p class="det-p">Eng qimmatli sovg'a — bu sizning ishtirokingiz va samimiy tilaklaringiz.</p>
-      </div>
     </div>
   </div>
 </section>
