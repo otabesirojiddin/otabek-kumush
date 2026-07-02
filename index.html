@@ -206,6 +206,7 @@ body.locked{overflow:hidden;height:100svh}
 .bouquet{display:block;width:min(52%,240px);height:auto;margin:0 auto 18px;mix-blend-mode:multiply;transform-origin:50% 88%;animation:sway 6.5s ease-in-out infinite}
 @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 @keyframes sway{0%,100%{transform:translateY(0) rotate(-1.6deg)}50%{transform:translateY(-7px) rotate(1.6deg)}}
+.giftflower{display:block;width:min(72%,400px);height:auto;margin:0 auto 10px;animation:floatY 6s ease-in-out infinite}
 .when-card{position:relative;max-width:440px;margin:44px auto 0;background:linear-gradient(180deg,#fffefb,#fbf6ec);border:1px solid rgba(201,169,106,.42);border-radius:20px;padding:46px 40px;box-shadow:var(--shadow)}
 .when-card::before{content:"";position:absolute;inset:9px;border:1px solid rgba(201,169,106,.28);border-radius:13px;pointer-events:none}
 .when-d{font-family:'Serif',Georgia,serif;font-size:clamp(25px,5vw,33px);color:var(--ink);letter-spacing:.01em}
@@ -427,6 +428,7 @@ body.locked{overflow:hidden;height:100svh}
 <!-- ================= TO'YONA (bank kartasi) ================= -->
 <section id="giftcard" class="center">
   <div class="wrap">
+    <img class="giftflower rev" src="assets/img/giftflower.png" alt="">
     <div class="eyebrow rev">To'yona</div>
     <h2 class="h rev">Qalbdan <span class="gold">to'yona</span></h2>
     <p class="lead rev">Qalban to'yona atamoqchi bo'lsangiz, quyidagi karta raqamidan foydalanishingiz mumkin.</p>
