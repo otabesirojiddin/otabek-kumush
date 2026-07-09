@@ -3,3 +3,5 @@ _preview.html
 _grab.html
 _ph.html
 _dbg.html
+.vercel
+.env*
